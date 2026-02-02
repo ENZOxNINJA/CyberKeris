@@ -1,179 +1,122 @@
 Project Name: Cyberkeris.com
-Type: Full-stack enterprise website
-Goal: Build a professional, responsive, and PWA-ready website for Cybersecurity, Software, AI Chat, Online Shop, Blog, Portfolio, and Admin/Staff management.
+Goal: Rebuild and redesign the full Cyberkeris.com website with a **premium, professional, and modern layout**, fully responsive, PWA-ready, including public, user, and admin/staff modules, AI Chat, cloud storage, email management, analytics dashboards, and notifications.
 
 ---
 
 1️⃣ **Tech Stack**
-- Frontend: Next.js (React framework), Tailwind CSS
-- Backend: Node.js / Express (API routes) + optional PHP for legacy pages
-- Database: MongoDB / MySQL (users, products, emails, cloud storage)
-- Authentication: JWT / session-based login
-- Storage: Cloud storage for staff/admin files
-- PWA: Service Worker, Web App Manifest
-- Optional: AI Chat integration (OpenAI API or custom NLP engine)
+- Frontend: **React + Next.js**
+- Styling: **Tailwind CSS**, optional animations in **CSS**
+- Backend: **Node.js / Express** (optional PHP for legacy pages)
+- Database: **MySQL / MongoDB**
+- Authentication: JWT or session-based login with **role-based access** (User, Staff, Admin)
+- AI Chat: OpenAI API or custom AI backend
+- PWA: Service Worker + Manifest for offline access
+- Optional: S3-compatible cloud storage, SMTP server for email
 
 ---
 
-2️⃣ **Folder Structure**
-cyberkeris/
-├─ pages/                # Next.js routes
-│   ├─ _app.js
-│   ├─ index.js
-│   ├─ about.js
-│   ├─ cybersecurity.js
-│   ├─ software.js
-│   ├─ shop.js
-│   ├─ future.js
-│   ├─ blog.js
-│   ├─ contact.js
-│   ├─ portfolio.js
-│   ├─ careers.js
-│   ├─ faq.js
-│   ├─ privacy.js
-│   ├─ terms.js
-│   ├─ login.js
-│   ├─ signup.js
-│   └─ ai-chat.js
-│
-├─ pages/admin/          # Admin/Staff only
-│   ├─ index.js
-│   ├─ manage-pages.js
-│   ├─ manage-users.js
-│   ├─ manage-products.js
-│   ├─ ai-chat-logs.js
-│   ├─ analytics.js
-│   ├─ notifications.js
-│   ├─ emails/
-│   │   ├─ index.js
-│   │   ├─ compose.js
-│   │   ├─ edit/[id].js
-│   │   └─ view/[id].js
-│   └─ cloud-storage/
-│       ├─ index.js
-│       ├─ upload.js
-│       ├─ edit/[id].js
-│       └─ view/[id].js
-├─ components/           # Reusable UI modules
-├─ utils/                # Auth, API, cloud, email, notifications
-├─ public/               # Images, logos, icons
-├─ styles/               # Tailwind CSS and animations
-├─ scripts/              # Client-side JS
-├─ pwa/                  # Service worker & manifest
-├─ storage/              # Cloud files, logs, backups
-└─ README.md             # Documentation
+2️⃣ **Design Layout & Theme**
+- **Color Palette:** 
+  - Primary: #0D1117 (dark background)
+  - Secondary: #1F2937 (cards, sections)
+  - Accent: #4F46E5 (buttons, highlights)
+  - Text: #F9FAFB (light text)
+- **Typography:** Inter, sans-serif
+- **Design Style:** Modern, minimalistic, premium
+- **Components:** Cards, Hero Sections, Grids, Modals, Dashboards, Analytics Charts
+- **Navigation:** Sticky header, collapsible mobile menu
+- **Footer:** Multi-column links, social icons
+- **Animations:** Smooth hover, fade-in, scroll effects
+- Fully **responsive** for all devices
 
 ---
 
-3️⃣ **Pages & Access Levels**
+3️⃣ **Pages & Modules**
 
-Public Pages (no login):
+**Public Pages:**
 - Home, About, Cybersecurity, Software, Shop, Future, Blog, Contact, Portfolio, Careers, FAQ, Privacy, Terms
 
-Authenticated User Pages:
-- Login, Signup, AI Chat
+**User Pages (after login):**
+- AI Chat
+- Profile (optional)
+- Order History / Shop Dashboard
 
-Admin / Staff Pages:
-- Dashboard, Manage Pages, Manage Users, Manage Products, AI Chat Logs, Analytics, Notifications
+**Admin / Staff Pages (after login):**
+- Dashboard Overview
+- Manage Pages, Users, Products
+- AI Chat Logs
+- Analytics Dashboard
+- Notifications
 - Emails: Inbox, Compose, Edit, View
-- Cloud Storage: Dashboard, Upload, Edit, View/Download
+- Cloud Storage: Upload, Edit, View
 
 ---
 
-4️⃣ **Features**
-- Responsive, professional, and premium design
-- Role-based authentication (User / Staff / Admin)
-- AI Chat interface (after login)
-- Cloud storage management
-- Email inbox, compose, view, edit
-- Analytics dashboard
-- Notifications system
-- SEO-friendly & PWA support
-- Modular reusable components (Header, Footer, Card, PageEditor, AIChat, etc.)
+4️⃣ **Components**
+- Header, Footer, QuickLinks
+- HeroSection, Card, PageEditor
+- AIChat
+- AdminSidebar, AdminHeader, AdminCard
+- EmailList, EmailCompose, EmailView
+- CloudStorageList, CloudStorageUpload, CloudStorageView, CloudStorageEdit
+- NotificationsList, AnalyticsChart
+- SearchFilter
 
 ---
 
-5️⃣ **Build Instructions**
-1. Clone repository
-2. Install dependencies:
-   - `npm install`
-3. Configure environment variables (DB, API keys, AI keys)
-4. Run development server:
-   - `npm run dev`
-5. Build for production:
-   - `npm run build`
-   - `npm start`
-6. Deploy on hosting with Node.js support (Vercel, AWS, DigitalOcean, etc.)
+5️⃣ **Functional Requirements**
+- Fully responsive across devices
+- Role-based access control (User / Staff / Admin)
+- AI Chat available only to logged-in users
+- Staff/Admin access to cloud storage and email management
+- Analytics & notifications dashboard for admin
+- PWA support for offline usage
+- SEO-friendly meta tags, sitemap, robots.txt
+- Optional: Dark/Light mode toggle
+- Optional: Multi-language support
+- Optional: Real-time notifications
+- Optional: Audit logs for admin actions
+- Optional: Automated cloud backups
 
 ---
 
-6️⃣ **Optional Enhancements**
-- Multi-language support
-- Dark/light mode toggle
-- Automated backups for cloud storage
-- Email templates & scheduling
-- Analytics chart enhancements
-- Real-time notifications
-- Admin activity logs
-
----
-
-7️⃣ **Output**
-- Fully functional Cyberkeris.com website with:
-  - All pages listed above
-  - AI Chat integration
-  - Admin / Staff management modules
-  - PWA support and SEO-friendly structure
-  - Premium professional layout
----
-
-## ⚡ Features
-
-### Public
-- Home, About, Cybersecurity, Software, Shop, Future, Blog  
-- Contact, Portfolio, Careers, FAQ, Privacy, Terms  
-
-### Authenticated Users
-- Login & Signup  
-- AI Chat Interface  
-
-### Admin / Staff
-- Dashboard & Analytics  
-- Manage Pages, Users, Products  
-- AI Chat Logs  
-- Notifications Management  
-- Email Management (Inbox, Compose, Edit, View)  
-- Cloud Storage (Upload, Edit, View/Download)  
-
-### Components
-- Header, Footer, HeroSection, QuickLinks, Card  
-- AdminSidebar, AdminHeader, AdminCard, PageEditor  
-- AIChat, EmailList, EmailCompose, EmailView  
-- CloudStorageList, CloudStorageUpload, CloudStorageView, CloudStorageEdit  
-- NotificationsList, AnalyticsChart, SearchFilter  
-
-### Utilities
-- auth.js, api.js, email.js, cloud.js, notifications.js, analytics.js, search.js  
-
-### PWA Support
-- service-worker.js, manifest.json, icons  
-
----
-
-## 🗂️ Folder Structure
-
-```text
+6️⃣ **Folder Structure**
 cyberkeris/
-├─ pages/                # Next.js pages & routes
-├─ components/           # Reusable UI components
-├─ utils/                # Utility scripts
-├─ public/               # Logo, icons, illustrations
-├─ styles/               # Global & animation styles
+├─ pages/                # Next.js pages (public, auth, AI, admin)
+├─ components/           # UI components
+├─ utils/                # Auth, API, Cloud, Email, Analytics, Search
+├─ styles/               # Tailwind CSS + animations
+├─ public/               # Logos, icons, images
 ├─ scripts/              # JS scripts
-├─ pwa/                  # Service worker & manifest
-├─ storage/              # Cloud uploads, logs, backups
-├─ README.md             # Project documentation
-├─ package.json          # Node.js dependencies
-├─ tailwind.config.js    # Tailwind CSS config
-├─ next.config.js        # Next.js config
-└─ jsconfig.json         # JS/TS path config
+├─ pwa/                  # Service Worker + manifest
+├─ storage/              # Cloud, logs, backups
+├─ config/               # Environment variables & API keys
+└─ README.md
+
+---
+
+7️⃣ **Design Layout Notes**
+- **Home Page:** Hero banner, services cards, AI Chat teaser, latest blog posts
+- **Service Pages:** Two-column sections, feature cards, CTA buttons
+- **Shop Page:** Product grid, filter & search
+- **Portfolio:** Project gallery with lightbox
+- **Blog:** Article grid, categories, search
+- **Contact:** Contact form, map, company info
+- **AI Chat Page:** Chatbox interface, scrollable message history
+- **Admin Dashboard:** Cards for metrics, sidebar navigation, charts
+- **Emails Module:** Table view, compose modal, view email detail
+- **Cloud Storage Module:** File grid/list, upload modal, download buttons
+
+---
+
+8️⃣ **Deployment Instructions (VPS + cPanel)**
+- Node.js hosting via cPanel or VPS
+- Database setup via MySQL / MariaDB in cPanel
+- Upload build output (`.next`, `public`, `node_modules`) to `/public_html/`
+- Configure `.env` for database, AI API keys, SMTP credentials
+- Optional SSH commands:
+  ```bash
+  cd /home/username/public_html
+  npm install
+  npm run build
+  npm start
