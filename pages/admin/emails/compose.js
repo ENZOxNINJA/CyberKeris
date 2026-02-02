@@ -19,7 +19,7 @@ export default function EmailCompose() {
             className="rounded-xl border border-white/10 bg-slate-900 px-4 py-3 text-sm text-white"
             placeholder="Write your message..."
           />
-          <button className="w-fit rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950">
+          <button className="w-fit rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft">
             Send email
           </button>
         </form>

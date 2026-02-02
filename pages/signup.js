@@ -43,7 +43,7 @@ export default function SignupPage() {
                 placeholder="Create a secure password"
               />
             </div>
-            <button className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950">
+            <button className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft">
               Create account
             </button>
           </form>

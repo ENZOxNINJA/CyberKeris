@@ -4,7 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "cyber-blue": "#0ea5e9",
+        primary: "#0D1117",
+        secondary: "#1F2937",
+        accent: "#4F46E5",
+        "accent-soft": "#6366F1",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
       },
     },
   },

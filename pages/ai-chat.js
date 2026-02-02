@@ -23,20 +23,20 @@ export default function AIChatPage() {
         <div className="glass rounded-2xl p-6">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold text-white">Secure chat</h2>
-            <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs text-emerald-300">
+            <span className="rounded-full bg-accent/20 px-3 py-1 text-xs text-accent-soft">
               Authenticated
             </span>
           </div>
           <div className="mt-6 space-y-4 text-sm text-slate-300">
             <div className="rounded-xl bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Assistant</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-accent-soft">Assistant</p>
               <p className="mt-2">
                 Hello! I can help you draft incident response plans, summarize vulnerabilities, and prepare
                 stakeholder updates.
               </p>
             </div>
             <div className="rounded-xl bg-slate-900/60 p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">You</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-accent-soft">You</p>
               <p className="mt-2">Provide a quick status update for our SOC leadership.</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function AIChatPage() {
               className="flex-1 rounded-full border border-white/10 bg-slate-900 px-4 py-3 text-sm text-white"
               placeholder="Ask CyberKeris AI..."
             />
-            <button className="rounded-full bg-cyan-500 px-5 py-3 text-sm font-semibold text-slate-950">
+            <button className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft">
               Send
             </button>
           </div>

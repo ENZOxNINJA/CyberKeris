@@ -21,7 +21,7 @@ export default function ViewCloudFile() {
         <p className="mt-4 text-sm text-slate-300">
           Stored in secure cloud storage with access limited to Security and Admin roles.
         </p>
-        <button className="mt-6 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950">
+        <button className="mt-6 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft">
           Download
         </button>
       </div>
