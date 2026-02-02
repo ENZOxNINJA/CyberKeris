@@ -2,7 +2,7 @@
 Official Website 
 # Cyberkeris.com
 
-![Cyberkeris Logo](./public/logo.png)
+![Cyberkeris Logo](./public/logo.svg)
 
 ---
 
