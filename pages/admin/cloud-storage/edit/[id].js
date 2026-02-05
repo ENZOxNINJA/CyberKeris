@@ -20,7 +20,7 @@ export default function EditCloudFile() {
             defaultValue="Updated playbook with Q3 procedures."
           />
           <div className="flex gap-3">
-            <button className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950">
+            <button className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft">
               Save
             </button>
             <button className="rounded-full border border-white/20 px-6 py-3 text-sm text-white">

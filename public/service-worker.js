@@ -1,5 +1,5 @@
 const CACHE_NAME = "cyberkeris-static-v1";
-const ASSETS = ["/", "/manifest.json"];
+const ASSETS = ["/", "/manifest.json", "/robots.txt", "/sitemap.xml"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

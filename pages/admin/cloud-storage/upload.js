@@ -10,7 +10,7 @@ export default function CloudStorageUpload() {
             type="file"
             className="rounded-xl border border-dashed border-white/20 bg-slate-900 px-4 py-6 text-sm text-slate-300"
           />
-          <button className="w-fit rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950">
+          <button className="w-fit rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft">
             Upload file
           </button>
         </form>

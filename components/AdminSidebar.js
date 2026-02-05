@@ -18,7 +18,7 @@ export default function AdminSidebar() {
       <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Navigation</p>
       <nav className="mt-4 flex flex-col gap-3">
         {links.map((link) => (
-          <Link key={link.href} href={link.href} className="text-slate-200 hover:text-white">
+          <Link key={link.href} href={link.href} className="text-slate-200 transition hover:text-white">
             {link.label}
           </Link>
         ))}

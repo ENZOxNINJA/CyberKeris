@@ -34,7 +34,7 @@ export default function HomePage() {
           <>
             <Link
               href="/contact"
-              className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950"
+              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accent-soft"
             >
               Talk to our team
             </Link>
@@ -69,7 +69,7 @@ export default function HomePage() {
               "Modular components for rapid delivery",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 text-sm text-slate-200">
-                <span className="mt-1 h-2 w-2 rounded-full bg-cyan-400" />
+                <span className="mt-1 h-2 w-2 rounded-full bg-accent" />
                 <span>{item}</span>
               </div>
             ))}

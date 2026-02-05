@@ -14,7 +14,7 @@ export default function CloudStorageIndex() {
           <h2 className="text-lg font-semibold text-white">Files</h2>
           <Link
             href="/admin/cloud-storage/upload"
-            className="rounded-full bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950"
+            className="rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent-soft"
           >
             Upload
           </Link>
@@ -30,7 +30,7 @@ export default function CloudStorageIndex() {
                 <p className="text-white">{file.name}</p>
                 <p className="text-xs text-slate-400">Owner: {file.owner}</p>
               </div>
-              <span className="text-xs text-cyan-300">View</span>
+              <span className="text-xs text-accent-soft">View</span>
             </Link>
           ))}
         </div>

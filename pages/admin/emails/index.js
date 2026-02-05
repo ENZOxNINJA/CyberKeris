@@ -14,7 +14,7 @@ export default function EmailInbox() {
           <h2 className="text-lg font-semibold text-white">Inbox</h2>
           <Link
             href="/admin/emails/compose"
-            className="rounded-full bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950"
+            className="rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:bg-accent-soft"
           >
             Compose
           </Link>
@@ -30,7 +30,7 @@ export default function EmailInbox() {
                 <p className="text-white">{email.subject}</p>
                 <p className="text-xs text-slate-400">{email.sender}</p>
               </div>
-              <span className="text-xs text-cyan-300">View</span>
+              <span className="text-xs text-accent-soft">View</span>
             </Link>
           ))}
         </div>
